@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+        "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <bean id="newsProvider" class="pojo.FXNewsProvider">
+        <constructor-arg index="0" ref="newsListener"/>
+        <constructor-arg index="1" ref="newsPersister"/>
+    </bean>
+    <!--
+    <bean id="newsListener" class="pojo.FXNewsListener"/>
+    <bean id="newsPersister" class="pojo.FXNewsPersister"/>
+    -->
+</beans>
