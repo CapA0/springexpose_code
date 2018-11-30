@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+        "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <bean id="newsListener" class="pojo.FXNewsListener"></bean>
+    <bean id="newsPersister" class="pojo.FXNewsPersister"></bean>
+
+    <bean id="providerFactory" class="pojo.factory.IFXNewsProviderFactory"></bean>
+    <bean id="newsProvider" factory-bean="providerFactory" factory-method="getInstance">
+        <property name="ifxNewsListener" ref="newsListener"/>
+        <property name="ifxNewsPersister" ref="newsPersister"/>
+    </bean>
+</beans>
