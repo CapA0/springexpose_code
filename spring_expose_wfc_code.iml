@@ -9,6 +9,12 @@
         <fileset id="fileset2" name="Bind_annotation" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/bind_annotation.xml</file>
         </fileset>
+        <fileset id="fileset3" name="Bind_factory" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/bind_factory.xml</file>
+        </fileset>
+        <fileset id="fileset4" name="Bind_factory (2)" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/bind_factory.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>
