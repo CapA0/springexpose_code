@@ -31,6 +31,7 @@ public class TestResourcePatternResolver {
         //测试getResource
         Resource resource = resourcePatternResolver.getResource("D:spring/xml");
         System.out.println(resource instanceof ClassPathResource);
-        System.out.println(resource.exists());
+        System.out.println(resource.exists()
+        );
     }
 }
