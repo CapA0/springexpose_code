@@ -1,7 +1,5 @@
 package pojo.event.wolf.interfaces;
 
-import pojo.event.wolf.interfaces.Wolf;
-
 import java.util.EventObject;
 
 /**
